@@ -1,0 +1,52 @@
+[
+    {
+        "name": "NikolayS93/wp-admin-form",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/nikolays93/wp-admin-form",
+            "reference": "1732e1f75c39f723f7210d5976987ad5cfaa52f1"
+        },
+        "time": "2019-07-04T09:46:54+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "NikolayS93\\WPAdminForm\\": "src/"
+            }
+        },
+        "authors": [
+            {
+                "name": "NikolayS93",
+                "email": "NikolayS93@ya.ru"
+            }
+        ],
+        "description": "My wordpres admin tool: forms"
+    },
+    {
+        "name": "NikolayS93/wp-admin-page",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/nikolays93/wp-admin-page",
+            "reference": "148bdf90f3acda3aa7256b12d734dc1fc18a7c07"
+        },
+        "time": "2019-09-10T08:24:44+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "NikolayS93\\WPAdminPage\\": "src/"
+            }
+        },
+        "authors": [
+            {
+                "name": "NikolayS93",
+                "email": "NikolayS93@ya.ru"
+            }
+        ],
+        "description": "My wordpres admin tool: admin-menu-page"
+    }
+]
