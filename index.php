@@ -3,7 +3,7 @@
  * Plugin Name: Recently viewed
  * Plugin URI: https://github.com/nikolays93
  * Description: Show last viewed posts, pages, products.. by cookie.
- * Version: 0.1
+ * Version: 0.1.1
  * Author: NikolayS93
  * Author URI: https://vk.com/nikolays_93
  * Author EMAIL: NikolayS93@ya.ru
@@ -78,6 +78,17 @@ add_action(
 );
 
 add_action( 'get_header', array( __NAMESPACE__ . '\Register', 'init' ) );
+add_action( 'woocommerce_after_single_product_summary', array( __NAMESPACE__ . '\Register', 'show_recently_products' ), 50 );
+
+add_filter( 'woocommerce_product_loop_start', function( $html ) {
+	global $is_recently_viewed_products;
+
+	if( $is_recently_viewed_products ) {
+		$html = '<h2>' . __( 'Recently viewed products', plugin::DOMAIN ) . '</h2>' . "\r\n" .  $html;
+	}
+
+	return $html;
+}, 10, 1 );
 
 register_activation_hook( __FILE__, array( __NAMESPACE__ . '\Register', 'activate' ) );
 register_deactivation_hook( __FILE__, array( __NAMESPACE__ . '\Register', 'deactivate' ) );

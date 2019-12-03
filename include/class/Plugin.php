@@ -5,9 +5,9 @@
  * @package Newproject.WordPress.plugin
  */
 
-namespace NikolayS93\PluginName;
+namespace NikolayS93\RecentlyViewed;
 
-use NikolayS93\PluginName\Creational\Singleton;
+use NikolayS93\RecentlyViewed\Creational\Singleton;
 
 /**
  * Class Plugin
@@ -74,7 +74,6 @@ class Plugin {
 	public static function unserialize_cookie( $cookie_value = '' ) {
 		if( $cookie_value ) {
 			$res = stripslashes( $cookie_value );
-			$res = preg_replace( '!s:(\d+):"(.*?)";!e', "'s:'.strlen('$2').':\"$2\";'", $res );
 			$res = unserialize( $res );
 
 			return apply_filters( self::PREFIX . 'unserialize_cookie', $res );

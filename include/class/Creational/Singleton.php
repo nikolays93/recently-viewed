@@ -6,7 +6,7 @@
  * @package Newproject.WordPress.plugin
  */
 
-namespace NikolayS93\PluginName\Creational;
+namespace NikolayS93\RecentlyViewed\Creational;
 
 use ReflectionClass;
 use ReflectionException;
