@@ -1,3 +1,3 @@
-[![Build Status](https://travis-ci.org/nikolays93/newproject.wordpress.plugin.svg?branch=master)](https://travis-ci.org/nikolays93/newproject.wordpress.plugin)
+## Recently viewed
 
-## New project wordpress plugin boilerplate
+Show last viewed posts, pages, products.. by cookie.

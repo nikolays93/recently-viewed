@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: plugin\n"
-"POT-Creation-Date: 2019-08-28 17:35+0400\n"
-"PO-Revision-Date: 2019-08-28 17:36+0400\n"
+"POT-Creation-Date: 2019-12-03 11:57+0400\n"
+"PO-Revision-Date: 2019-12-03 11:58+0400\n"
 "Last-Translator: Nikolays93 <nikolays93@ya.ru>\n"
 "Language-Team: NikolayS93 <NikolayS93@yandex.ru>\n"
 "Language: ru_RU\n"
@@ -20,30 +20,38 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-1: languages\n"
 "X-Poedit-SearchPathExcluded-2: .git\n"
 
-#: include/_lang.php:7
-msgid "New plugin"
-msgstr "Новый плагин"
-
-#: include/_lang.php:8
-msgid "New plugin boilerplate"
-msgstr "Фундамент нового плагина"
-
-#: include/class/Register.php:28
+#: include/class/Register.php:57
 msgid "New Plugin name Title"
 msgstr "Название нового плагина"
 
-#: include/class/Register.php:31
+#: include/class/Register.php:60
 msgid "Example"
 msgstr "Пример"
 
-#: include/class/Register.php:47
+#: include/class/Register.php:75
 msgid "Section"
 msgstr "Секция"
 
-#: include/class/Register.php:55
+#: include/class/Register.php:83
 msgid "MetaBox"
 msgstr "Мета бокс"
+
+#: include/directly-unused-lang.php:8
+msgid "Recently viewed"
+msgstr "Недавно просмотренное"
+
+#: include/directly-unused-lang.php:9
+msgid "Show last viewed posts, pages, products.. by cookie."
+msgstr ""
+"Показывает недавно просмотренные записи, страница, товары.. с помощью "
+"куки."
 
 #: vendor/NikolayS93/wp-admin-form/src/templates/select.php:8
 msgid "Choose an option"
 msgstr ""
+
+#~ msgid "New plugin"
+#~ msgstr "Новый плагин"
+
+#~ msgid "New plugin boilerplate"
+#~ msgstr "Фундамент нового плагина"
